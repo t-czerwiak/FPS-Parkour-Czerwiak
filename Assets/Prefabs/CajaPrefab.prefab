@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2982896675623094319}
   - component: {fileID: 509577916434177304}
+  - component: {fileID: 6067441887545575407}
   m_Layer: 0
   m_Name: CajaPrefab
   m_TagString: Untagged
@@ -48,13 +49,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1767023735211034709
+--- !u!65 &6067441887545575407
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7042213792649811706}
+  m_GameObject: {fileID: 3777329577662992115}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -118,12 +119,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb2ed337813821ab963d133459a65af, type: 3}
---- !u!1 &7042213792649811706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: ffb2ed337813821ab963d133459a65af,
-    type: 3}
-  m_PrefabInstance: {fileID: 7042213792649711706}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7042213792649317082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: ffb2ed337813821ab963d133459a65af,
