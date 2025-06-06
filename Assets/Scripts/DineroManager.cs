@@ -11,7 +11,7 @@ public class DineroManager : MonoBehaviour
     {
         if (playerMoney + amount < 0)
         {
-
+            
         }
         else
         {
