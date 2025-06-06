@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     {
         if (dineroManager && moneyText)
         {
-            moneyText.text = "$" + dineroManager.playerMoney.ToString("F2");
+            moneyText.text = "$" + dineroManager.playerMoney.ToString();
         }
 
         else
@@ -25,6 +25,4 @@ public class UIManager : MonoBehaviour
             Debug.Log("Error, dineroManager o moneyText no están asignados en UIManager.");
         }
     }
-    
 }
-
