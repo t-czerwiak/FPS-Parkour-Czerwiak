@@ -5,24 +5,21 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public DineroManager dineroManager;
     public TextMeshProUGUI moneyText;
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
-        dineroManager = FindObjectOfType<DineroManager>();
+
     }
 
-    void Update()
-    {
-        if (dineroManager && moneyText)
-        {
-            moneyText.text = "$" + dineroManager.playerMoney.ToString();
-        }
+    public void UpdateMoneyUI(string moneyAmount)
+    {  
+        moneyText.text = moneyAmount;
+    }
 
-        else
-        {
-            Debug.Log("Error, dineroManager o moneyText no están asignados en UIManager.");
-        }
+    public void UpdateHealthUI(string damageAmount)
+    {  
+        healthText.text = damageAmount;
     }
 }

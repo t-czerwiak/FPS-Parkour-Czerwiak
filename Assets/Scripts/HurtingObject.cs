@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MercanciasScript : MonoBehaviour
+public class HurtingObject : MonoBehaviour
 {
-    public int precio = 10;
-    public DineroManager dineroManager;
+    public int daño = 10;
+    public HealthManager healthManager;
 
     void Start()
     {   
-        dineroManager = FindObjectOfType<DineroManager>();
+        healthManager = FindObjectOfType<HealthManager>();
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (dineroManager.UpdateMoney(-precio))
+            if (healthManager.UpdateHealth(-daño))
             {
                 Destroy(gameObject);
             }
